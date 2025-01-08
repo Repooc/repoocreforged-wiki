@@ -19,7 +19,9 @@ hero:
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
-import Background from '../../components/background.astro';
+import Background from '/src/components/Background.astro';
+
+<Background />
 
 ## Most Visited
 
@@ -37,5 +39,3 @@ import Background from '../../components/background.astro';
     <LinkCard title="Dynamic Status Icons (ElvUI Plugin)" href="/addons/dynamicstatusicons/" description='This plugin adds little icons for a visual indicator to show your current status in game such as resting, in combat, etc.'/>
     <LinkCard title="Keybind Display (ElvUI Plugin)" href="/addons/keybinddisplay/" description='This allows you to customize the keybind text in various of ways like selecting which keybind is displayed if you have 2 keybinds for the same button and more options as well!' />
 </CardGrid>
-
-<Background />
