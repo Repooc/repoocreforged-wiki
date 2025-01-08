@@ -19,6 +19,6 @@
     "starlight-image-zoom": "^0.10.1"
   },
   "devDependencies": {
-    "@types/marked": "^5.0.2"
+    "@types/marked": "^6.0.0"
   }
 }
