@@ -1,0 +1,41 @@
+---
+title: Plugin/AddOn Guides
+description: Building World of Warcraft addons for ElvUI!
+template: splash
+hero:
+  tagline: ElvUI doesn't do what? Hold my beer...
+  image:
+    file: ../../assets/HighResLogo.webp
+  actions:
+    - text: Introduction
+      link: /introduction/
+      icon: right-arrow
+    - text: Read the ElvUI Wiki
+      link: https://github.com/tukui-org/ElvUI/wiki
+      attrs:
+        target: _blank
+      icon: external
+      variant: minimal
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import Background from '../../components/background.astro';
+
+## Most Visited
+
+<CardGrid>
+    <LinkCard
+      title="ActionBar Buddy (ElvUI Plugin)"
+      href="/addons/actionbarbuddy/"
+      description="This takes inspiration from ElvUI's Inherit Global Fade option and allows a lot more fine tuning than what is normally allowed!"
+    />
+    <LinkCard
+      title="Ratio Minimap Auras (ElvUI Plugin)"
+      href="/addons/ratiominimapauras/"
+      description="This mimics the rectangle look that you can do with ElvUI actionbar buttons or auras above the unitframes!"
+    />
+    <LinkCard title="Dynamic Status Icons (ElvUI Plugin)" href="/addons/dynamicstatusicons/" description='This plugin adds little icons for a visual indicator to show your current status in game such as resting, in combat, etc.'/>
+    <LinkCard title="Keybind Display (ElvUI Plugin)" href="/addons/keybinddisplay/" description='This allows you to customize the keybind text in various of ways like selecting which keybind is displayed if you have 2 keybinds for the same button and more options as well!' />
+</CardGrid>
+
+<Background />
