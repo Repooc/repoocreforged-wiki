@@ -1,0 +1,21 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Pagination.astro';
+import PageAuthors from './PageAuthors.astro';
+---
+
+<div>
+  {/*
+    Since the pages file name isn't going to be the id if a slug is defined, used file path and used last part for file name
+  */}
+  <PageAuthors repo="repooc/repoocreforged-wiki" file={Astro.props.entry.filePath} />
+  <Default {...Astro.props}><slot /></Default>
+</div>
+
+<style>
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+</style>

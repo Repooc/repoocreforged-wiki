@@ -10,6 +10,9 @@ export default defineConfig({
     integrations: [
         starlight({
             plugins: [starlightImageZoom()],
+            components: {
+                Pagination: "./src/components/Pagination.astro",
+            },
             title: "Repooc Reforged",
             editLink: {
                 baseUrl:
