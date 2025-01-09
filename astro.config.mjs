@@ -16,6 +16,7 @@ export default defineConfig({
                     "https://github.com/repooc/repoocreforged-wiki/edit/preview/",
             },
             lastUpdated: true,
+            logo: { src: "/src/assets/HighResLogo.webp" },
             customCss: [
                 "./src/styles/custom.css",
                 "./src/styles/background.css",
