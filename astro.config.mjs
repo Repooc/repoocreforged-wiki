@@ -14,6 +14,7 @@ export default defineConfig({
             customCss: [
                 "./src/styles/custom.css",
                 "./src/styles/background.css",
+                "./src/fonts/font-face.css",
             ],
             social: {
                 discord: "https://repoocreforged.dev/discord",
