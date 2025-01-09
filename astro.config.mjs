@@ -11,6 +11,11 @@ export default defineConfig({
         starlight({
             plugins: [starlightImageZoom()],
             title: "Repooc Reforged",
+            editLink: {
+                baseUrl:
+                    "https://github.com/repooc/repoocreforged-wiki/edit/preview/",
+            },
+            lastUpdated: true,
             customCss: [
                 "./src/styles/custom.css",
                 "./src/styles/background.css",
