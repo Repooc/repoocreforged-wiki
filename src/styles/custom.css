@@ -16,19 +16,21 @@
 	--sl-sidebar-width: 18rem; /* 18.75rem; default */
 	--sl-font: 'GeistMono', serif;
 }
+
 /* Light mode colors. */
 :root[data-theme='light'] {
 	--sl-color-accent-low: #ddcdfe;
-	--sl-color-accent: #8919eb;
+	--sl-color-accent: #A330C9;
 	--sl-color-accent-high: #3f186b;
 	--sl-color-white: #051f00;
 	--sl-color-gray-1: #0b3000;
 	--sl-color-gray-2: #144400;
-	--sl-color-gray-3: #236a00;
-	--sl-color-gray-4: #3ba600;
-	--sl-color-gray-5: #94d781;
-	--sl-color-gray-6: #cbffbd;
-	--sl-color-gray-7: #e6ffdf;
+	--sl-color-gray-3: #A330C9;
+	--sl-color-gray-4: #A330C9;
+	--sl-color-gray-5: #A330C9;
+	--sl-color-gray-6: #01f593;
+	/* --sl-color-gray-6: #01f593; */
+	/* --sl-color-gray-7: #e6ffdf; */
 	--sl-color-black: #ffffff;
 
 	--sl-content-width: 55rem; /* 45rem; default */
