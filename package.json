@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.3",
-    "@astrojs/starlight": "^0.30.5",
+    "@astrojs/starlight": "^0.31.0",
     "astro": "^5.1.5",
     "astro-embed": "^0.9.0",
     "marked": "^15.0.6",
