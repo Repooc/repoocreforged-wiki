@@ -1,0 +1,45 @@
+---
+import config from 'virtual:starlight/user-config';
+import Default from '@astrojs/starlight/components/SocialIcons.astro';
+import { Icon } from '@astrojs/starlight/components';
+
+type Platform = keyof NonNullable<typeof config.social>;
+type SocialConfig = NonNullable<NonNullable<typeof config.social>[Platform]>;
+const links = Object.entries(config.social || {}) as [Platform, SocialConfig][];
+---
+
+
+{links.length > 0 && (
+	<>
+		{links.map(([platform, { label, url }]) => (
+			<a href={url} rel="me" class="sl-flex">
+				{platform == 'discord' ? ( 
+					<img alt="Discord" src="https://img.shields.io/discord/1162274244487561216?style=plastic&label=%20&color=01f593" class="discord-badge">
+					<Icon name={platform} class="discord-icon"/>
+				) : (
+					<span class="sr-only">{label}</span>
+					<Icon name={platform} />
+				)}
+			</a>
+		))}
+	</>
+)}
+
+<style>
+	a {
+		color: var(--sl-color-text-accent);
+		padding: 0.5em;
+		margin: -0.5em;
+	}
+	a:hover {
+		opacity: 0.66;
+	}
+	.discord-badge {
+  		vertical-align: middle;
+  		max-height: 18px;
+		margin-right: 0.5em;
+	}
+	.discord-icon {
+		vertical-align: middle;
+	}
+</style>

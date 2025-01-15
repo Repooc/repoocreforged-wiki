@@ -12,6 +12,7 @@ export default defineConfig({
             plugins: [starlightImageZoom()],
             components: {
                 Pagination: "./src/components/Pagination.astro",
+                SocialIcons: "./src/components/SocialIcons.astro",
             },
             title: "Repooc Reforged",
             editLink: {
