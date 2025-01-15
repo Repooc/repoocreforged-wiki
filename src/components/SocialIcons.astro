@@ -12,7 +12,7 @@ const links = Object.entries(config.social || {}) as [Platform, SocialConfig][];
 {links.length > 0 && (
 	<>
 		{links.map(([platform, { label, url }]) => (
-			<a href={url} rel="me" class="sl-flex">
+			<a href={url} rel="me" class="sl-flex" target="_blank">
 				{platform == 'discord' ? ( 
 					<img alt="Discord" src="https://img.shields.io/discord/1162274244487561216?style=plastic&label=%20&color=01f593" class="discord-badge">
 					<Icon name={platform} class="discord-icon" />
