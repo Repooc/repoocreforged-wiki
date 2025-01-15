@@ -2,7 +2,7 @@
 import config from 'virtual:starlight/user-config';
 import { Icon } from '@astrojs/starlight/components';
 import { Picture } from 'astro:assets';
-import imgKofi from '/src/assets/icons/kofi_symbol.svg';
+import imgKofi from '/src/assets/icons/kofi_symbol_styled.png';
 
 type Platform = keyof NonNullable<typeof config.social>;
 type SocialConfig = NonNullable<NonNullable<typeof config.social>[Platform]>;
@@ -25,9 +25,10 @@ const links = Object.entries(config.social || {}) as [Platform, SocialConfig][];
 		))}
 	</>
 )}
+
 <>
 	<a href="https://ko-fi.com/repoocreforged" rel="me" target="_blank">
-		<Picture src={imgKofi} alt="Ko-fi" width="17" height="17" class="discord-icon" />
+		<Picture src={imgKofi} alt="Ko-fi" width="17" height="17" class="kofi-icon" />
 	</a>
 </>
 <style>
@@ -45,6 +46,9 @@ const links = Object.entries(config.social || {}) as [Platform, SocialConfig][];
 		margin-right: 0.5em;
 	}
 	.discord-icon {
+		vertical-align: middle;
+	}
+	.kofi-icon {
 		vertical-align: middle;
 	}
 </style>
