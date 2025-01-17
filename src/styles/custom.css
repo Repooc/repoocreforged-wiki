@@ -14,7 +14,7 @@
 
 	--sl-content-width: 55rem; /* 45rem; default */
 	--sl-sidebar-width: 18rem; /* 18.75rem; default */
-	--sl-font: 'GeistMono', serif;
+	--sl-font: 'GeistMono', 'IBM Plex Serif', serif;
 	.sl-link-card .description {
 		color: #01f593;
 	}
