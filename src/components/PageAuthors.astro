@@ -63,6 +63,7 @@ const uniqueAuthors = removeDuplicates(commits);
   gap: 0.5em;
   font-size: var(--sl-text-sm);
   font-weight: 600;
+  color: #01f593;
 }
 
 /* Thank you Stephanie Eckles! https://smolcss.dev/#smol-avatar-list */
@@ -120,13 +121,13 @@ const uniqueAuthors = removeDuplicates(commits);
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: #fff;
-  box-shadow: 0 0 0 0.05em #fff, 0 0 0 0.08em rgba(0, 0, 0, 0.15);
+  background-color: #A330C9;
+  box-shadow: 0 0 0 0.05em #A330C9, 0 0 0 0.08em rgba(0, 0, 0, 0.15);
 }
 
 .smol-avatar-list a:focus {
   outline: 2px solid transparent;
   /* Double-layer trick to work for dark and light backgrounds */
-  box-shadow: 0 0 0 0.08em #29344B, 0 0 0 0.12em white;
+  box-shadow: 0 0 0 0.08em #29344B, 0 0 0 0.12em #01f593;
 }
 </style>
