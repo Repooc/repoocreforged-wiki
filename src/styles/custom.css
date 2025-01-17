@@ -6,7 +6,7 @@
 	--sl-color-white: #ffffff;
 	--sl-color-gray-1: #01f593;
 	/* --sl-color-gray-2: #01f593; */
-	--sl-color-gray-3: #01f593;
+	/* --sl-color-gray-3: #01f593; */
 	--sl-color-gray-4: #236a00;
 	--sl-color-gray-5: #A330C9;
 	/* --sl-color-gray-6: #0b3000; */
@@ -15,6 +15,9 @@
 	--sl-content-width: 55rem; /* 45rem; default */
 	--sl-sidebar-width: 18rem; /* 18.75rem; default */
 	--sl-font: 'GeistMono', serif;
+	.sl-link-card .description {
+		color: #01f593;
+	  }
 }
 
 /* Light mode colors. */
