@@ -21,11 +21,7 @@ export default defineConfig({
             },
             lastUpdated: true,
             logo: { src: "/src/assets/HighResLogo.webp" },
-            customCss: [
-                "./src/styles/custom.css",
-                "./src/styles/background.css",
-                "./src/fonts/font-face.css",
-            ],
+            customCss: ["./src/styles/custom.css", "./src/fonts/font-face.css"],
             social: {
                 discord: "https://repoocreforged.dev/discord",
                 github: "https://github.com/repooc",
