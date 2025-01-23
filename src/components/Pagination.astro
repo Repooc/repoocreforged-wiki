@@ -8,7 +8,7 @@ import PageAuthors from './PageAuthors.astro';
   {/*
     Since the pages file name isn't going to be the id if a slug is defined, used file path and used last part for file name
   */}
-  <PageAuthors repo="repooc/repoocreforged-wiki" file={Astro.props.entry.filePath} />
+  <PageAuthors repo="repooc/repoocreforged-wiki" file={Astro.props.entry.id} />
   <Default {...Astro.props}><slot /></Default>
 </div>
 
