@@ -4,9 +4,10 @@ interface Props {
   file: string;
 }
 const { repo, file } = Astro.props;
+const fullPath = `src/content/docs/${file}.mdx`;
 
 const url = new URL(`https://api.github.com/repos/${repo}/commits`);
-url.searchParams.set('path', `src/content/docs/${file}`);
+url.searchParams.set('path', `src/content/docs/${fullPath}`);
 url.searchParams.set('per_page', '100');
 
 // Fetch commits from the GitHub API
