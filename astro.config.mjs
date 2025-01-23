@@ -7,6 +7,17 @@ import starlightImageZoom from "starlight-image-zoom";
 
 // https://astro.build/config
 export default defineConfig({
+    redirects: {
+        "/addons/actionbarbuddy": "/elvui-plugins/actionbarbuddy",
+        "/addons/actionbarmasks": "/elvui-plugins/actionbarmasks",
+        "/addons/dynamicstatusicons": "/elvui-plugins/dynamicstatusicons",
+        "/addons/funstuff": "/elvui-plugins/funstuff",
+        "/addons/keybinddisplay": "/elvui-plugins/keybinddisplay",
+        "/addons/ratiominimapauras": "/elvui-plugins/ratiominimapauras",
+        "/addons/scrapsupport": "/elvui-plugins/scrapsupport",
+        "/addons/splitactionbars": "/elvui-plugins/splitactionbars",
+        "/addons/tooltiptweaks": "/elvui-plugins/tooltiptweaks",
+    },
     integrations: [
         starlight({
             plugins: [starlightImageZoom()],
@@ -40,41 +51,7 @@ export default defineConfig({
                 },
                 {
                     label: "ElvUI Plugins",
-                    items: [
-                        {
-                            label: "ActionBar Buddy",
-                            slug: "addons/actionbarbuddy",
-                        },
-                        {
-                            label: "ActionBar Masks",
-                            slug: "addons/actionbarmasks",
-                        },
-                        {
-                            label: "Dynamic Status Icons",
-                            slug: "addons/dynamicstatusicons",
-                        },
-                        { label: "Fun Stuff", slug: "addons/funstuff" },
-                        {
-                            label: "Keybind Display",
-                            slug: "addons/keybinddisplay",
-                        },
-                        {
-                            label: "Ratio Minimap Auras",
-                            slug: "addons/ratiominimapauras",
-                        },
-                        {
-                            label: "Scrap Support",
-                            slug: "addons/scrapsupport",
-                        },
-                        {
-                            label: "Split ActionBars",
-                            slug: "addons/splitactionbars",
-                        },
-                        {
-                            label: "Tooltip Tweaks",
-                            slug: "addons/tooltiptweaks",
-                        },
-                    ],
+                    autogenerate: { directory: "elvui-plugins" },
                 },
             ],
         }),
