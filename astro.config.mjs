@@ -26,6 +26,29 @@ export default defineConfig({
         SocialIcons: "./src/components/SocialIcons.astro",
       },
       title: "Repooc Reforged",
+      defaultLocale: "root",
+      locales: {
+        root: {
+          label: "English",
+          lang: "en",
+        },
+        "zh-cn": {
+          label: "简体中文",
+          lang: "zh-CN",
+        },
+        "zh-tw": {
+          label: "繁體中文",
+          lang: "zh-TW",
+        },
+        "ko-kr": {
+          label: "한국어",
+          lang: "ko-KR",
+        },
+        "de-De": {
+          label: "Deutsch",
+          lang: "de-DE",
+        },
+      },
       editLink: {
         baseUrl: "https://github.com/repooc/repoocreforged-wiki/edit/preview/",
       },
