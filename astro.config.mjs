@@ -66,7 +66,7 @@ export default defineConfig({
           items: [
             {
               label: "Introduction",
-              slug: "introduction",
+              link: "/introduction/",
             },
           ],
         },
