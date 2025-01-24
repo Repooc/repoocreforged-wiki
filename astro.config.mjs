@@ -7,20 +7,6 @@ import starlightImageZoom from "starlight-image-zoom";
 
 // https://astro.build/config
 export default defineConfig({
-  i18n: {
-    locales: ["en", "de-DE", "fr", "pt-BR", "ru-RU"],
-    defaultLocale: "en",
-    fallback: {
-      "de-DE": "en",
-      fr: "en",
-      "pt-BR": "en",
-      "ru-RU": "en",
-    },
-    routing: {
-      prefixDefaultLocale: false,
-      fallbackType: "rewrite",
-    },
-  },
   redirects: {
     "/addons/actionbarbuddy": "/elvui-plugins/actionbarbuddy",
     "/addons/actionbarmasks": "/elvui-plugins/actionbarmasks",
@@ -40,6 +26,21 @@ export default defineConfig({
         SocialIcons: "./src/components/SocialIcons.astro",
       },
       title: "Repooc Reforged",
+      defaultLocale: "root",
+      locales: {
+        root: {
+          label: "English",
+          lang: "en",
+        },
+        de: {
+          label: "Deutsch",
+          lang: "de",
+        },
+        fr: {
+          label: "Français",
+          lang: "fr",
+        },
+      },
       editLink: {
         baseUrl: "https://github.com/repooc/repoocreforged-wiki/edit/preview/",
       },
