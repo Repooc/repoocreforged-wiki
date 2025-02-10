@@ -312,7 +312,7 @@
                 div.className = "class-item";
                 div.innerHTML = `
                     <img id="img-${className}" 
-                         src="https://jibicons.repoocreforged.com/assets/${className}-Fabled.png" 
+                         src="/images/jiberishicons/${className}-Fabled.png" 
                          alt="${classDisplayName}" 
                          onerror="this.src='placeholder.png'">
                     <label>${classDisplayName}</label>
@@ -327,7 +327,7 @@
 
         function updatePreview(className, styleName) {
             document.getElementById(`img-${className}`).src =
-                `https://jibicons.repoocreforged.com/assets/${className}-${styleName}.png`;
+                `/images/jiberishicons/${className}-${styleName}.png`;
         }
 
         window.onload = populateGrid;
