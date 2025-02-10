@@ -246,7 +246,7 @@
                     await new Promise((resolve, reject) => {
                         img.onload = resolve;
                         img.onerror = reject;
-                        img.src = `https://jibicons.repoocreforged.com/assets/${className}-${style}.png`;
+                        img.src = `https://image-proxy.repoocreforged.workers.dev/assets/${className}-${style}.png`;
                     });
 
                     // Calculate position
