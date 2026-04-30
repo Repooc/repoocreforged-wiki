@@ -1,18 +1,15 @@
 ---
-// @ts-check
-import type { StarlightRouteData } from '@astrojs/starlight/route-data';
+import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/Pagination.astro';
 import PageAuthors from './PageAuthors.astro';
-
-const route: StarlightRouteData = Astro.locals.starlightRoute;
 ---
 
 <div>
   {/*
     Since the pages file name isn't going to be the id if a slug is defined, used file path and used last part for file name
   */}
-  {route.entry && <PageAuthors repo="repooc/repoocreforged-wiki" file={route.entry.id} />}
-  <Default />
+  <PageAuthors repo="repooc/repoocreforged-wiki" file={Astro.props.entry.id} />
+  <Default {...Astro.props}><slot /></Default>
 </div>
 
 <style>

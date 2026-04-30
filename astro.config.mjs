@@ -47,11 +47,11 @@ export default defineConfig({
       lastUpdated: true,
       logo: { src: "/src/assets/HighResLogo.webp" },
       customCss: ["./src/styles/custom.css", "./src/fonts/font-face.css"],
-      social: [
-        { icon: 'discord', label: 'Discord', href: 'https://repoocreforged.dev/discord' },
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/repooc' },
-        { icon: 'patreon', label: 'Patreon', href: 'https://patreon.com/repoocreforged' },
-      ],
+      social: {
+        discord: "https://repoocreforged.dev/discord",
+        github: "https://github.com/repooc",
+        patreon: "https://patreon.com/repoocreforged",
+      },
       sidebar: [
         {
           label: "Getting Started",
