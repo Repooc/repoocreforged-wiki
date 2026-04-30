@@ -11,22 +11,15 @@ url.searchParams.set('path', fullPath);
 url.searchParams.set('per_page', '100');
 
 // Fetch commits from the GitHub API
-const response = await fetch(url, {
+const commits = await fetch(url, {
   headers: {
     Accept: 'application/vnd.github+json',
     'User-Agent': 'starlight-contributors/1.0',
   },
-});
-
-let commits = [];
-if (response.ok) {
-  commits = await response.json();
-} else {
-  console.warn(`Failed to fetch commits for ${fullPath}: ${response.status}`);
-}
+}).then((res) => res.json());
 
 function removeDuplicates(commits: any) {
-  if (!Array.isArray(commits)) return [];
+  if (!commits) return [];
   const map = new Map();
   for (const commit of commits) {
     const author = commit.author;
